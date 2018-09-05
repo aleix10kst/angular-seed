@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,9 @@ export class HomeComponent implements OnInit {
 
   title = 'angular-seed';
 
-  constructor() { }
+  constructor(
+    private fb: FormBuilder
+  ) { }
 
   ngOnInit() {
   }

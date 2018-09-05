@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <a style="margin-right: auto;" routerLink="/">Angular-seed</a>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item (click)="handleSettingsClicked()">
+        <mat-icon>settings</mat-icon>
+        <span>Settings</span>
+      </button>
+      <button mat-menu-item (click)="handleHelpClicked()">
+        <mat-icon>help_outline</mat-icon>
+        <span>Help</span>
+      </button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
